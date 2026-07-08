@@ -1,0 +1,66 @@
+/* RTL OVERRIDES & BOOTSTRAP UTILITY CORRECTIONS */
+
+html[dir="rtl"] body {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+/* Correct Bootstrap LTR-assumed margins in RTL mode */
+html[dir="rtl"] .ms-auto {
+  margin-left: unset !important;
+  margin-right: auto !important;
+}
+
+html[dir="rtl"] .me-auto {
+  margin-right: unset !important;
+  margin-left: auto !important;
+}
+
+html[dir="rtl"] .ms-1 { margin-left: unset !important; margin-right: 0.25rem !important; }
+html[dir="rtl"] .ms-2 { margin-left: unset !important; margin-right: 0.5rem !important; }
+html[dir="rtl"] .ms-3 { margin-left: unset !important; margin-right: 1rem !important; }
+html[dir="rtl"] .ms-4 { margin-left: unset !important; margin-right: 1.5rem !important; }
+html[dir="rtl"] .ms-5 { margin-left: unset !important; margin-right: 3rem !important; }
+
+html[dir="rtl"] .me-1 { margin-right: unset !important; margin-left: 0.25rem !important; }
+html[dir="rtl"] .me-2 { margin-right: unset !important; margin-left: 0.5rem !important; }
+html[dir="rtl"] .me-3 { margin-right: unset !important; margin-left: 1rem !important; }
+html[dir="rtl"] .me-4 { margin-right: unset !important; margin-left: 1.5rem !important; }
+html[dir="rtl"] .me-5 { margin-right: unset !important; margin-left: 3rem !important; }
+
+/* Text alignments */
+html[dir="rtl"] .text-start {
+  text-align: right !important;
+}
+
+html[dir="rtl"] .text-end {
+  text-align: left !important;
+}
+
+/* Responsive columns and grids flex alignments */
+html[dir="rtl"] .navbar-collapse {
+  text-align: right;
+}
+
+html[dir="rtl"] .navbar-nav {
+  padding-right: 0;
+}
+
+/* Testimonials image border accent swap if needed */
+html[dir="rtl"] .testimonial-card img {
+  border-color: var(--gold);
+}
+
+/* Ensure font awesome icons in RTL flip logically if necessary */
+html[dir="rtl"] .fa-arrow-right {
+  transform: scaleX(-1);
+}
+html[dir="rtl"] .fa-arrow-left {
+  transform: scaleX(-1);
+}
+
+/* Smooth margins for about values */
+html[dir="rtl"] .value-list {
+  padding-right: 0;
+}
