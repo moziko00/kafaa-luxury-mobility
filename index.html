@@ -46,6 +46,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       rel="stylesheet"
     />
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/>
     <link
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
@@ -71,19 +72,13 @@
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
           <!-- Logo -->
-          <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
-            <div class="brand-mark">K</div>
-
-            <div class="brand-text">
-              <div class="brand-name" data-i18n="brandName">
-                كفاءة العربية المتحدة
-              </div>
-
-              <div class="brand-subtitle" data-i18n="brandSubtitle">
-                للتحرك الفاخر
-              </div>
-            </div>
-          </a>
+<a class="navbar-brand" href="#home">
+    <img
+        src="assets/images/logo/logokafaa.png"
+        class="logo-img"
+        alt="Kafaa"
+    />
+</a>
 
           <!-- Mobile Button -->
           <button
@@ -97,7 +92,7 @@
 
           <!-- Menu -->
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
+            <ul class="navbar-nav mx-lg-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#home">الرئيسية</a>
               </li>
@@ -165,7 +160,10 @@
                 >
               </div>
             </div>
-            <div class="col-lg-5 d-flex justify-content-end" data-aos="fade-left">
+            <div
+              class="col-lg-5 d-flex justify-content-end"
+              data-aos="fade-left"
+            >
               <div class="hero-card glass-card premium-card">
                 <img
                   src="assets/images/hero/HeroPhoto.jpg"
@@ -191,31 +189,46 @@
       <section class="section" id="fleet">
         <div class="container">
           <div class="section-heading text-center" data-aos="fade-up">
-            <p class="eyebrow">الأسطول المميز</p>
-            <h2>سيارات مميزة لكل مناسبة</h2>
+            <h2>اختر السيارة المناسبة لرحلتك</h2>
+
             <p>
-              من السيدان التنفيذية إلى سيارات الدفع الرباعي الملكية، صُمم
-              أسطولنا ليفاجئ ويؤدي على أكمل وجه.
+              استكشف مجموعتنا المختارة من السيارات الفاخرة التي تجمع بين الأداء
+              والأناقة والراحة لتناسب رحلات الأعمال والمناسبات الخاصة والتنقل
+              اليومي.
             </p>
           </div>
+
           <div class="swiper carSwiper" data-aos="fade-up">
             <div class="swiper-wrapper">
+              <!-- Mercedes -->
+
               <div class="swiper-slide">
                 <div class="car-card premium-card">
                   <div class="car-image-wrapper">
                     <img
                       src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=900&q=80"
-                      alt="Mercedes S Class"
+                      alt="Mercedes S-Class"
                       loading="lazy"
                     />
                   </div>
+
                   <div class="car-card-body">
-                    <h4>مرسيدس إس كلاس</h4>
-                    <p>راحة فاخرة ووجود مهيب للسفر التنفيذي.</p>
-                    <a href="#contact" class="btn btn-gold w-100">احجز الآن</a>
+                    <h4>Mercedes S-Class</h4>
+
+                    <span class="car-type"> Executive Luxury Sedan </span>
+
+                    <p>
+                      رمز الفخامة والراحة، الخيار الأمثل لرجال الأعمال وكبار
+                      الشخصيات والرحلات التنفيذية.
+                    </p>
+
+                    <a href="#contact" class="btn btn-gold"> احجز الآن </a>
                   </div>
                 </div>
               </div>
+
+              <!-- BMW -->
+
               <div class="swiper-slide">
                 <div class="car-card premium-card">
                   <div class="car-image-wrapper">
@@ -225,13 +238,24 @@
                       loading="lazy"
                     />
                   </div>
+
                   <div class="car-card-body">
-                    <h4>بي إم دبليو 7</h4>
-                    <p>تصميم جريء مع تقنية فاخرة للرفاهية الحديثة.</p>
-                    <a href="#contact" class="btn btn-gold w-100">احجز الآن</a>
+                    <h4>BMW 7 Series</h4>
+
+                    <span class="car-type"> Premium Luxury Sedan </span>
+
+                    <p>
+                      أداء استثنائي وتقنيات متطورة مع تصميم يجمع بين الأناقة
+                      والطابع الرياضي.
+                    </p>
+
+                    <a href="#contact" class="btn btn-gold"> احجز الآن </a>
                   </div>
                 </div>
               </div>
+
+              <!-- Audi -->
+
               <div class="swiper-slide">
                 <div class="car-card premium-card">
                   <div class="car-image-wrapper">
@@ -241,13 +265,24 @@
                       loading="lazy"
                     />
                   </div>
+
                   <div class="car-card-body">
-                    <h4>أودي A8</h4>
-                    <p>حرفية راقية وأداء سلس لرحلات فاخرة.</p>
-                    <a href="#contact" class="btn btn-gold w-100">احجز الآن</a>
+                    <h4>Audi A8</h4>
+
+                    <span class="car-type"> Executive Luxury Sedan </span>
+
+                    <p>
+                      تصميم راقٍ وتقنيات ذكية تمنحك تجربة قيادة هادئة وفاخرة في
+                      كل رحلة.
+                    </p>
+
+                    <a href="#contact" class="btn btn-gold"> احجز الآن </a>
                   </div>
                 </div>
               </div>
+
+              <!-- Lexus -->
+
               <div class="swiper-slide">
                 <div class="car-card premium-card">
                   <div class="car-image-wrapper">
@@ -257,16 +292,24 @@
                       loading="lazy"
                     />
                   </div>
+
                   <div class="car-card-body">
-                    <h4>لكزس LX600</h4>
+                    <h4>Lexus LX600</h4>
+
+                    <span class="car-type"> Premium Luxury SUV </span>
+
                     <p>
-                      فخامة SUV مهيبة للسفر الجماعي والرحلات العائلية ووصول
-                      الضيوف الكبار.
+                      سيارة SUV فاخرة توفر أعلى مستويات الراحة والقوة، مثالية
+                      للعائلات والرحلات الخاصة.
                     </p>
-                    <a href="#contact" class="btn btn-gold w-100">احجز الآن</a>
+
+                    <a href="#contact" class="btn btn-gold"> احجز الآن </a>
                   </div>
                 </div>
               </div>
+
+              <!-- Range Rover -->
+
               <div class="swiper-slide">
                 <div class="car-card premium-card">
                   <div class="car-image-wrapper">
@@ -276,33 +319,51 @@
                       loading="lazy"
                     />
                   </div>
+
                   <div class="car-card-body">
-                    <h4>رانج روفر</h4>
-                    <p>أناقة استثنائية مع ثقة وسمعة في كل التضاريس.</p>
-                    <a href="#contact" class="btn btn-gold w-100">احجز الآن</a>
+                    <h4>Range Rover</h4>
+
+                    <span class="car-type"> Luxury Performance SUV </span>
+
+                    <p>
+                      فخامة بريطانية تجمع بين القوة والأناقة لتمنحك حضورًا
+                      استثنائيًا على جميع الطرق.
+                    </p>
+
+                    <a href="#contact" class="btn btn-gold"> احجز الآن </a>
                   </div>
                 </div>
               </div>
+
+              <!-- Rolls Royce -->
+
               <div class="swiper-slide">
                 <div class="car-card premium-card">
                   <div class="car-image-wrapper">
                     <img
                       src="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=900&q=80"
-                      alt="Rolls Royce Ghost"
+                      alt="Rolls-Royce Ghost"
                       loading="lazy"
                     />
                   </div>
+
                   <div class="car-card-body">
-                    <h4>رولز رويس غوست</h4>
-                    <p>فخامة لا مثيل لها مصممة لأكثر المناسبات استثنائية.</p>
-                    <a href="#contact" class="btn btn-gold w-100">احجز الآن</a>
+                    <h4>Rolls-Royce Ghost</h4>
+
+                    <span class="car-type"> Ultra Luxury Sedan </span>
+
+                    <p>
+                      قمة الفخامة والتميز، صُممت لتمنحك تجربة لا تُنسى في
+                      المناسبات والرحلات الخاصة.
+                    </p>
+
+                    <a href="#contact" class="btn btn-gold"> احجز الآن </a>
                   </div>
                 </div>
               </div>
             </div>
+
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </section>
@@ -310,48 +371,73 @@
       <section class="section section-alt" id="about">
         <div class="container">
           <div class="row align-items-center gy-4">
+            <!-- Left Content -->
             <div class="col-lg-6" data-aos="fade-right">
               <p class="eyebrow">عن كفاءة</p>
-              <h2>
-                الاعتماد على التنقل الفاخر لأكثر العملاء تميّزًا في المملكة
-                العربية السعودية
-              </h2>
+
+              <h2>شريككم الموثوق للتنقل الفاخر في المملكة العربية السعودية</h2>
+
               <p>
-                كفاءة العربية المتحدة للخدمات اللوجستية هي شريك متميز في الخدمات
-                اللوجستية والتنقل يقدم تجارب نقل عالمية المستوى في جميع أنحاء
-                المملكة. وتُعدّ التزامنا بالتميز والسرية والموثوقية سبب اختيارنا
-                المفضّل من قبل العملاء المؤسسيين والحكوميين والكبار.
+                تقدم كفاءة العربية المتحدة للخدمات اللوجستية حلول تنقل فاخرة
+                تجمع بين الاحترافية والراحة والموثوقية، مع أسطول حديث وسائقين
+                محترفين لتلبية احتياجات رجال الأعمال وكبار الشخصيات والجهات
+                الحكومية في جميع أنحاء المملكة.
               </p>
+
               <div class="about-grid mt-4">
                 <div class="about-box glass-card premium-card">
                   <i class="fa-solid fa-bullseye"></i>
+
                   <h4>المهمة</h4>
+
                   <p>
-                    تقديم حلول تنقل استثنائية تجمع بين السلامة والأناقة والدقة.
+                    تقديم حلول تنقل فاخرة تجمع بين الأمان والراحة والاحترافية،
+                    مع الالتزام بأعلى معايير الجودة في كل رحلة.
                   </p>
                 </div>
+
                 <div class="about-box glass-card premium-card">
                   <i class="fa-solid fa-eye"></i>
+
                   <h4>الرؤية</h4>
+
                   <p>
-                    أن نكون المعيار للسيارات الفاخرة والتنقل المؤسسي في المملكة
-                    العربية السعودية.
+                    أن نكون الخيار الأول لخدمات التنقل الفاخر والمؤسسي في
+                    المملكة العربية السعودية.
                   </p>
                 </div>
               </div>
             </div>
+
+            <!-- Right Content -->
             <div class="col-lg-6" data-aos="fade-left">
               <div class="values-card glass-card premium-card p-4">
                 <h3>القيم المؤسسية</h3>
+
                 <ul class="value-list">
-                  <li><i class="fa-solid fa-award"></i> التميز في كل رحلة</li>
-                  <li><i class="fa-solid fa-lock"></i> السرية والخصوصية</li>
                   <li>
-                    <i class="fa-solid fa-handshake"></i> النزاهة والشفافية
+                    <i class="fa-solid fa-star"></i>
+                    التميز في الخدمة
                   </li>
+
                   <li>
-                    <i class="fa-solid fa-clock"></i> الموثوقية والدقة في
-                    المواعيد
+                    <i class="fa-solid fa-user-shield"></i>
+                    السرية والخصوصية
+                  </li>
+
+                  <li>
+                    <i class="fa-solid fa-handshake"></i>
+                    النزاهة والشفافية
+                  </li>
+
+                  <li>
+                    <i class="fa-solid fa-clock"></i>
+                    الالتزام بالمواعيد
+                  </li>
+
+                  <li>
+                    <i class="fa-solid fa-heart"></i>
+                    العميل أولاً
                   </li>
                 </ul>
               </div>
@@ -363,8 +449,14 @@
       <section class="section" id="why-us">
         <div class="container">
           <div class="section-heading text-center" data-aos="fade-up">
-            <p class="eyebrow">لماذا تختارنا</p>
-            <h2>الفخامة والدقة والطمأنينة</h2>
+            <p class="eyebrow">لماذا تختار كفاءة</p>
+
+            <h2>تجربة تنقل فاخرة بمعايير عالمية</h2>
+
+            <p class="section-description">
+              نقدم حلول نقل فاخرة تجمع بين الجودة والالتزام والاحترافية لتجربة
+              استثنائية في كل رحلة.
+            </p>
           </div>
           <div class="row g-4">
             <div
@@ -373,20 +465,36 @@
               data-aos-delay="100"
             >
               <div class="info-card glass-card premium-card">
-                <i class="fa-solid fa-headset"></i>
-                <h4>دعم عملاء على مدار الساعة</h4>
-                <p>مساعدة على مدار الساعة لكل خطة وتعديل في اللحظة الأخيرة.</p>
+                <div class="info-icon">
+                  <i class="fa-solid fa-headset"></i>
+                </div>
+
+                <h4>دعم العملاء 24/7</h4>
+
+                <p>
+                  فريق دعم متاح على مدار الساعة لمساعدتك في الحجوزات والتعديلات
+                  والاستفسارات.
+                </p>
               </div>
             </div>
+
+            <!-- Luxury Fleet -->
             <div
               class="col-md-6 col-lg-4"
               data-aos="fade-up"
               data-aos-delay="150"
             >
               <div class="info-card glass-card premium-card">
-                <i class="fa-solid fa-car-side"></i>
-                <h4>أسطول فاخر</h4>
-                <p>مركبات مختارة بعناية معروفة بالراحة والأداء والأناقة.</p>
+                <div class="info-icon">
+                  <i class="fa-solid fa-car-side"></i>
+                </div>
+
+                <h4>أسطول فاخر وحديث</h4>
+
+                <p>
+                  مجموعة مختارة من أحدث السيارات الفاخرة لتناسب جميع احتياجات
+                  التنقل والأعمال.
+                </p>
               </div>
             </div>
             <div
@@ -395,46 +503,74 @@
               data-aos-delay="200"
             >
               <div class="info-card glass-card premium-card">
-                <i class="fa-solid fa-plane-arrival"></i>
-                <h4>استلام من المطار</h4>
-                <p>وصول سلس مع استقبال ومساعدة سريعة ونقل سريع.</p>
+                <div class="info-icon">
+                  <i class="fa-solid fa-plane-arrival"></i>
+                </div>
+
+                <h4>استقبال احترافي بالمطار</h4>
+
+                <p>
+                  استقبال ومتابعة الرحلات لضمان وصول مريح دون انتظار مع خدمة نقل
+                  مباشرة.
+                </p>
               </div>
             </div>
+
+            <!-- Chauffeurs -->
             <div
               class="col-md-6 col-lg-4"
               data-aos="fade-up"
               data-aos-delay="250"
             >
               <div class="info-card glass-card premium-card">
-                <i class="fa-solid fa-user-tie"></i>
-                <h4>سائقون محترفون</h4>
+                <div class="info-icon">
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+
+                <h4>سائقون محترفون ومعتمدون</h4>
+
                 <p>
-                  سائقون محترفون مرخصون ومدربون تدريبًا عاليًا للراحة التنفيذية.
+                  سائقون مرخصون يتمتعون بالخبرة والاحترافية لتقديم تجربة تنقل
+                  راقية وآمنة.
                 </p>
               </div>
             </div>
+
+            <!-- Pricing -->
             <div
               class="col-md-6 col-lg-4"
               data-aos="fade-up"
               data-aos-delay="300"
             >
               <div class="info-card glass-card premium-card">
-                <i class="fa-solid fa-tags"></i>
-                <h4>أسعار تنافسية</h4>
-                <p>خدمة فاخرة بأسعار شفافة ومناسبة لاحتياجاتك.</p>
+                <div class="info-icon">
+                  <i class="fa-solid fa-tags"></i>
+                </div>
+
+                <h4>أسعار شفافة وتنافسية</h4>
+
+                <p>
+                  أسعار واضحة دون رسوم مخفية مع أفضل قيمة مقابل الخدمة الفاخرة.
+                </p>
               </div>
             </div>
+
+            <!-- Corporate -->
             <div
               class="col-md-6 col-lg-4"
               data-aos="fade-up"
               data-aos-delay="350"
             >
               <div class="info-card glass-card premium-card">
-                <i class="fa-solid fa-building"></i>
-                <h4>عقود مؤسسية</h4>
+                <div class="info-icon">
+                  <i class="fa-solid fa-building"></i>
+                </div>
+
+                <h4>حلول للشركات والمؤسسات</h4>
+
                 <p>
-                  اتفاقيات مرنة للأساطيل والمديرين التنفيذيين والسفر المؤسسي
-                  المتكرر.
+                  عقود مرنة وباقات مخصصة للشركات والجهات الحكومية لتلبية
+                  احتياجات التنقل المستمرة.
                 </p>
               </div>
             </div>
@@ -480,39 +616,63 @@
             data-aos="fade-up"
           >
             <p class="eyebrow">الخدمات</p>
+
             <h2>حلول مصممة لكل احتياج سفر</h2>
+
+            <p class="services-description">
+              نقدم مجموعة متكاملة من خدمات النقل الفاخر المصممة لتلبية احتياجات
+              الأفراد، الشركات، وكبار الشخصيات بأعلى معايير الجودة والاحترافية.
+            </p>
           </div>
+
           <div class="row g-4 services-grid">
+            <!-- Luxury Cars -->
             <div
               class="col-md-6 col-lg-4"
               data-aos="fade-up"
               data-aos-delay="80"
             >
-              <div class="service-card glass-card premium-card h-100">
+              <div
+                class="service-card featured-service glass-card premium-card h-100"
+              >
                 <div class="service-icon">
                   <i class="fa-solid fa-crown"></i>
                 </div>
+
                 <div class="service-content">
-                  <h4>تأجير سيارات فاخرة</h4>
-                  <p>فئة راقية وراحة للأعمال والترفيه والمناسبات الخاصة.</p>
+                  <h4>تأجير السيارات الفاخرة</h4>
+
+                  <p>
+                    سيارات فاخرة تمنحك الراحة والأناقة والأداء في رحلات الأعمال
+                    والمناسبات الخاصة.
+                  </p>
                 </div>
               </div>
             </div>
+
+            <!-- SUV -->
             <div
               class="col-md-6 col-lg-4"
               data-aos="fade-up"
               data-aos-delay="140"
             >
               <div class="service-card glass-card premium-card h-100">
-                <div class="service-icon"><i class="fa-solid fa-car"></i></div>
+                <div class="service-icon">
+                  <i class="fa-solid fa-car"></i>
+                </div>
+
                 <div class="service-content">
-                  <h4>تأجير سيارات الدفع الرباعي</h4>
+                  <h4>تأجير سيارات SUV الفاخرة</h4>
+
                   <p>
-                    سيارات دفع رباعي فاخرة واسعة للسفر العائلي والوصول المميز.
+                    سيارات SUV فاخرة بمساحات واسعة تناسب العائلات والرحلات
+                    الطويلة.
                   </p>
                 </div>
               </div>
             </div>
+
+            <!-- Monthly -->
             <div
               class="col-md-6 col-lg-4"
               data-aos="fade-up"
@@ -522,15 +682,19 @@
                 <div class="service-icon">
                   <i class="fa-solid fa-calendar-days"></i>
                 </div>
+
                 <div class="service-content">
-                  <h4>تأجير شهري</h4>
+                  <h4>التأجير طويل الأجل</h4>
+
                   <p>
-                    خطط طويلة الأجل مرنة للمديرين التنفيذيين واحتياجات التنقل
-                    المؤسسي.
+                    حلول تأجير مرنة للشركات والمديرين التنفيذيين مع أفضل
+                    الأسعار.
                   </p>
                 </div>
               </div>
             </div>
+
+            <!-- Business -->
             <div
               class="col-md-6 col-lg-4"
               data-aos="fade-up"
@@ -540,12 +704,16 @@
                 <div class="service-icon">
                   <i class="fa-solid fa-briefcase"></i>
                 </div>
+
                 <div class="service-content">
-                  <h4>تأجير أعمال</h4>
-                  <p>حلول نقل موثوقة للاجتماعات والفعاليات والسفر المؤسسي.</p>
+                  <h4>حلول النقل للشركات</h4>
+
+                  <p>خدمات نقل احترافية للاجتماعات والوفود والرحلات الرسمية.</p>
                 </div>
               </div>
             </div>
+
+            <!-- Airport -->
             <div
               class="col-md-6 col-lg-4"
               data-aos="fade-up"
@@ -555,50 +723,70 @@
                 <div class="service-icon">
                   <i class="fa-solid fa-plane-departure"></i>
                 </div>
+
                 <div class="service-content">
-                  <h4>نقل من المطار</h4>
-                  <p>استلام من المطار بدون عناء مع خدمات دقيقة ومصقولة.</p>
+                  <h4>استقبال وتوصيل المطار</h4>
+
+                  <p>
+                    استقبال احترافي من وإلى المطار مع التزام كامل بالمواعيد.
+                  </p>
                 </div>
               </div>
             </div>
+
+            <!-- VIP -->
             <div
               class="col-md-6 col-lg-4"
               data-aos="fade-up"
               data-aos-delay="380"
             >
               <div class="service-card glass-card premium-card h-100">
-                <div class="service-icon"><i class="fa-solid fa-star"></i></div>
+                <div class="service-icon">
+                  <i class="fa-solid fa-star"></i>
+                </div>
+
                 <div class="service-content">
-                  <h4>نقل VIP</h4>
-                  <p>نقل بري فاخر لكبار الشخصيات والمشاهير والضيوف الخاصين.</p>
+                  <h4>خدمة كبار الشخصيات (VIP)</h4>
+
+                  <p>خدمة تنقل فاخرة مصممة لكبار الشخصيات والضيوف الرسميين.</p>
                 </div>
               </div>
             </div>
           </div>
+
           <div
             class="services-cta text-center"
             data-aos="fade-up"
             data-aos-delay="420"
           >
-            <a href="#fleet" class="btn btn-gold btn-lg">استعرض أسطولنا</a>
+            <a href="#fleet" class="btn btn-gold btn-lg"> استكشف أسطولنا </a>
           </div>
         </div>
       </section>
 
-      <section class="section section-alt">
+      <section class="section section-alt" id="gallery">
         <div class="container">
           <div class="section-heading text-center" data-aos="fade-up">
             <p class="eyebrow">معرض الأسطول</p>
-            <h2>تصفح المجموعة</h2>
+
+            <h2>استكشف أسطولنا</h2>
+
+            <p class="gallery-description">
+              شاهد مجموعة مختارة من سياراتنا الفاخرة التي تجمع بين الأناقة،
+              الأداء، والراحة لتناسب رحلات الأعمال والمناسبات الخاصة والتنقل
+              اليومي.
+            </p>
           </div>
+
           <div class="gallery-grid">
             <div class="gallery-item premium-card" data-aos="zoom-in">
               <img
                 src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80"
-                alt="Luxury vehicle exterior"
+                alt="Luxury sports car"
                 loading="lazy"
               />
             </div>
+
             <div
               class="gallery-item premium-card"
               data-aos="zoom-in"
@@ -606,10 +794,11 @@
             >
               <img
                 src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=900&q=80"
-                alt="Luxury interior"
+                alt="Luxury sedan"
                 loading="lazy"
               />
             </div>
+
             <div
               class="gallery-item premium-card"
               data-aos="zoom-in"
@@ -617,10 +806,11 @@
             >
               <img
                 src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=80"
-                alt="Premium sedan"
+                alt="Premium executive vehicle"
                 loading="lazy"
               />
             </div>
+
             <div
               class="gallery-item premium-card"
               data-aos="zoom-in"
@@ -628,7 +818,7 @@
             >
               <img
                 src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=80"
-                alt="SUV luxury vehicle"
+                alt="Luxury SUV"
                 loading="lazy"
               />
             </div>
@@ -636,57 +826,172 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="testimonials">
         <div class="container">
           <div class="section-heading text-center" data-aos="fade-up">
             <p class="eyebrow">آراء العملاء</p>
+
             <h2>ما يقوله عملاؤنا</h2>
+
+            <p class="section-description">
+              نفتخر بثقة عملائنا الذين اختارونا لتقديم خدمات نقل فاخرة تتميز
+              بالاحترافية والالتزام والجودة في كل رحلة.
+            </p>
           </div>
+
           <div class="swiper testimonialSwiper" data-aos="fade-up">
             <div class="swiper-wrapper">
+              <!-- 1 -->
               <div class="swiper-slide">
                 <div class="testimonial-card glass-card premium-card">
+                  <div class="quote-icon">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
+
                   <img
                     src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80"
-                    alt="Client portrait"
+                    alt="عبدالله السعد"
                     loading="lazy"
                   />
+
                   <p>
-                    “كانت الخدمة مثالية من الاستلام من المطار إلى التسليم
-                    الأخير. شعرت بكل التفاصيل بالفخامة.”
+                    كانت الخدمة مثالية من الاستلام من المطار وحتى نهاية الرحلة،
+                    كل التفاصيل كانت احترافية وفاخرة.
                   </p>
-                  <h4>عبد الله السعد</h4>
-                  <span>تنفيذي مؤسسي</span>
+
+                  <div class="testimonial-info">
+                    <h4>عبدالله السعد</h4>
+                    <span>رجل أعمال</span>
+                  </div>
                 </div>
               </div>
+
+              <!-- 2 -->
               <div class="swiper-slide">
                 <div class="testimonial-card glass-card premium-card">
+                  <div class="quote-icon">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
+
                   <img
                     src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=300&q=80"
-                    alt="Client portrait"
+                    alt="نور حسن"
                     loading="lazy"
                   />
+
                   <p>
-                    “سيارات لا تشوبها شائبة وسائقون محترفون وفريق يفهم حقًا
-                    ضيافة الفخامة.”
+                    سيارات راقية وسائقون محترفون والتزام كامل بالمواعيد. تجربة
+                    تستحق التكرار.
                   </p>
-                  <h4>نورا حسن</h4>
-                  <span>ضيف VIP</span>
+
+                  <div class="testimonial-info">
+                    <h4>نور حسن</h4>
+                    <span>عميلة VIP</span>
+                  </div>
                 </div>
               </div>
+
+              <!-- 3 -->
               <div class="swiper-slide">
                 <div class="testimonial-card glass-card premium-card">
+                  <div class="quote-icon">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
+
                   <img
                     src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80"
-                    alt="Client portrait"
+                    alt="لينا فاروق"
                     loading="lazy"
                   />
-                  <p>“أعطتنا خطة التأجير الشهري راحة وموثوقية وقيمة ممتازة.”</p>
-                  <h4>لينا فاروق</h4>
-                  <span>عمليات الأعمال</span>
+
+                  <p>
+                    التأجير الشهري وفر علينا الوقت والتكاليف مع خدمة ممتازة
+                    واستجابة سريعة.
+                  </p>
+
+                  <div class="testimonial-info">
+                    <h4>لينا فاروق</h4>
+                    <span>سيدة أعمال</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4 -->
+              <div class="swiper-slide">
+                <div class="testimonial-card glass-card premium-card">
+                  <div class="quote-icon">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
+
+                  <img
+                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80"
+                    alt="محمد العتيبي"
+                    loading="lazy"
+                  />
+
+                  <p>
+                    احتجنا سيارة في وقت قصير وتم توفيرها بسرعة، وكانت الخدمة
+                    راقية والتنظيم ممتازًا.
+                  </p>
+
+                  <div class="testimonial-info">
+                    <h4>محمد العتيبي</h4>
+                    <span>مدير مشاريع</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5 -->
+              <div class="swiper-slide">
+                <div class="testimonial-card glass-card premium-card">
+                  <div class="quote-icon">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
+
+                  <img
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=300&q=80"
+                    alt="سارة الحربي"
+                    loading="lazy"
+                  />
+
+                  <p>
+                    أعجبني الاهتمام بالتفاصيل وجودة السيارات، وسأعتمد عليهم في
+                    جميع رحلاتي القادمة.
+                  </p>
+
+                  <div class="testimonial-info">
+                    <h4>سارة الحربي</h4>
+                    <span>استشارية أعمال</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 6 -->
+              <div class="swiper-slide">
+                <div class="testimonial-card glass-card premium-card">
+                  <div class="quote-icon">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
+
+                  <img
+                    src="https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=300&q=80"
+                    alt="خالد القحطاني"
+                    loading="lazy"
+                  />
+
+                  <p>
+                    خدمة راقية وسائقون محترفون، وكانت الرحلة مريحة وآمنة من
+                    البداية وحتى النهاية.
+                  </p>
+
+                  <div class="testimonial-info">
+                    <h4>خالد القحطاني</h4>
+                    <span>رائد أعمال</span>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="swiper-pagination"></div>
           </div>
         </div>
@@ -696,84 +1001,119 @@
         <div class="container">
           <div class="section-heading text-center" data-aos="fade-up">
             <p class="eyebrow">اتصل بنا</p>
+
             <h2>تواصل مع كفاءة العربية المتحدة</h2>
+
             <p>
-              نقدم حلولاً احترافية للتنقل وتأجير السيارات الفاخرة في جميع أنحاء
-              المملكة العربية السعودية.
+              يسعدنا استقبال جميع استفساراتكم وحجوزاتكم، ونوفر خدمات النقل
+              وتأجير السيارات الفاخرة في جميع أنحاء المملكة العربية السعودية.
             </p>
           </div>
+
           <div class="row g-4 align-items-stretch contact-grid">
+            <!-- Google Map -->
             <div class="col-lg-7" data-aos="fade-right">
               <div class="contact-card glass-card premium-card p-4 h-100">
                 <div class="map-placeholder h-100">
                   <iframe
-                    title="Company map"
-                    src="https://www.google.com/maps?q=Riyadh%20Saudi%20Arabia&output=embed"
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3622.4775362369487!2d46.77135087536835!3d24.779096577982475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDQ2JzQ0LjgiTiA0NsKwNDYnMjYuMSJF!5e0!3m2!1sen!2seg!4v1783562245793!5m2!1sen!2seg"
+                    width="800"
+                    height="600"
+                    style="border: 0"
+                    allowfullscreen=""
                     loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
+                    referrerpolicy="strict-origin-when-cross-origin"
                   ></iframe>
                 </div>
               </div>
             </div>
+
+            <!-- Contact Info -->
             <div class="col-lg-5" data-aos="fade-left">
               <div class="contact-card glass-card premium-card p-4 h-100">
                 <div class="contact-info-stack">
+                  <!-- Address -->
                   <div class="contact-info-item">
                     <div class="contact-icon">
                       <i class="fa-solid fa-location-dot"></i>
                     </div>
+
                     <div>
                       <h4>عنوان الشركة</h4>
-                      <p>الرياض، المملكة العربية السعودية</p>
+                      <p>الرياض، حي الحمراء، شارع الحسن بن حسين</p>
                     </div>
                   </div>
+
+                  <!-- Phone -->
                   <div class="contact-info-item">
                     <div class="contact-icon">
                       <i class="fa-solid fa-phone"></i>
                     </div>
+
                     <div>
                       <h4>رقم الهاتف</h4>
-                      <p>+966 55 123 4567</p>
+                      <p>0000 000 000 +966</p>
                     </div>
                   </div>
+
+                  <!-- WhatsApp -->
                   <div class="contact-info-item">
                     <div class="contact-icon">
                       <i class="fa-brands fa-whatsapp"></i>
                     </div>
+
                     <div>
                       <h4>رقم الواتساب</h4>
-                      <p>+966 55 123 4567</p>
+                      <p>+966 50 700 0227</p>
                     </div>
                   </div>
+
+                  <!-- Email -->
                   <div class="contact-info-item">
                     <div class="contact-icon">
                       <i class="fa-solid fa-envelope"></i>
                     </div>
+
                     <div>
                       <h4>البريد الإلكتروني</h4>
-                      <p>reservations@kafaa.com.sa</p>
+                      <p>
+                        <a href="mailto:ksa.kafaah@hotmail.com">
+                          ksa.kafaah@hotmail.com
+                        </a>
+                      </p>
                     </div>
                   </div>
+
+                  <!-- Working Hours -->
                   <div class="contact-info-item">
                     <div class="contact-icon">
                       <i class="fa-solid fa-clock"></i>
                     </div>
+
                     <div>
                       <h4>ساعات العمل</h4>
-                      <p>الإثنين–الأحد: دعم 24/7</p>
+                      <p>متاحون لخدمتكم على مدار 24 ساعة طوال أيام الأسبوع</p>
                     </div>
                   </div>
+
+                  <!-- Buttons -->
                   <div class="contact-actions">
-                    <a class="btn contact-btn" href="tel:+966551234567"
-                      ><i class="fa-solid fa-phone"></i> اتصل الآن</a
-                    >
+                    <a class="btn contact-btn" href="tel:+966000000000">
+                      <i class="fa-solid fa-phone"></i>
+                      اتصل الآن
+                    </a>
+
                     <a
                       class="btn contact-whatsapp"
-                      href="https://wa.me/966551234567"
+                      href="https://wa.me/966507000227"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><i class="fa-brands fa-whatsapp"></i> واتساب</a
                     >
+                      <i
+                        class="fa-brands fa-whatsapp"
+                      ></i>
+                      واتساب
+                    </a>
                   </div>
                 </div>
               </div>
@@ -818,7 +1158,7 @@
               <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
               <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
-            <p class="mt-3">السجل التجاري: 1234567890</p>
+            <p class="mt-3">السجل التجاري: 7003264798</p>
           </div>
         </div>
         <div class="footer-bottom">
@@ -833,12 +1173,12 @@
       ><i class="fa-solid fa-arrow-up"></i
     ></a>
     <a
-      href="https://wa.me/966551234567"
+      href="https://wa.me/966507000227"
       class="floating-btn whatsapp"
       aria-label="Contact on WhatsApp"
       ><i class="fa-brands fa-whatsapp"></i
     ></a>
-    <a href="tel:+966551234567" class="floating-btn call" aria-label="Call us"
+    <a href="tel:+966000000000" class="floating-btn call" aria-label="Call us"
       ><i class="fa-solid fa-phone"></i
     ></a>
 

@@ -15,9 +15,11 @@ function applyLanguage(lang) {
 
   document.querySelectorAll('.lang-btn').forEach((button) => {
     button.classList.toggle('active', button.dataset.lang === lang);
+
   });
 
   initFleetSwiper();
+  initTestimonialSwiper();
   updateActiveNavLink();
 
   const content = languageContent[lang];
@@ -40,6 +42,7 @@ function applyLanguage(lang) {
 document.querySelectorAll('.brand-name').forEach((element) => {
   element.textContent = content.brandName;
 });
+setText('#testimonials .section-heading p', content.testimonialsText);
 
 document.querySelectorAll('.brand-subtitle').forEach((element) => {
   element.textContent = content.brandSubtitle;
@@ -88,6 +91,7 @@ document.querySelectorAll('.navbar-nav .nav-link').forEach((link, index) => {
 
   setText('#why-us .eyebrow', content.whyEyebrow);
   setText('#why-us h2', content.whyTitle);
+  setText('#why-us .section-heading p', content.whyText);
   setListText('#why-us .info-card h4', content.whyCards.map((card) => card.title));
   setListText('#why-us .info-card p', content.whyCards.map((card) => card.text));
 
@@ -95,15 +99,19 @@ document.querySelectorAll('.navbar-nav .nav-link').forEach((link, index) => {
 
   setText('#services .eyebrow', content.servicesEyebrow);
   setText('#services h2', content.servicesTitle);
+  setText('#services .services-description', content.servicesText);
+setText('#services .section-heading p:last-of-type', content.servicesText);
   setListText('#services .service-card h4', content.services.map((service) => service.title));
   setListText('#services .service-card p', content.services.map((service) => service.text));
   setText('#services .services-cta .btn', content.servicesButton);
 
-  setText('.section-alt .section-heading .eyebrow', content.galleryEyebrow);
-  setText('.section-alt .section-heading h2', content.galleryTitle);
+  setText('#gallery .gallery-description', content.galleryText);
+  setText('#gallery .eyebrow', content.galleryEyebrow);
+setText('#gallery h2', content.galleryTitle);
+setText('#gallery .gallery-description', content.galleryText);
 
-  setText('.section .section-heading .eyebrow', content.testimonialsEyebrow);
-  setText('.section .section-heading h2', content.testimonialsTitle);
+setText('#testimonials .section-heading .eyebrow', content.testimonialsEyebrow);
+setText('#testimonials .section-heading h2', content.testimonialsTitle);
   setListText('.testimonial-card p', content.testimonials.map((item) => item.quote));
   setListText('.testimonial-card h4', content.testimonials.map((item) => item.name));
   setListText('.testimonial-card span', content.testimonials.map((item) => item.role));
@@ -123,7 +131,24 @@ document.querySelectorAll('.navbar-nav .nav-link').forEach((link, index) => {
   contactButtons.forEach((button, index) => {
     if (content.contactButtons[index]) {
       const iconClass = index === 0 ? 'fa-phone' : 'fa-whatsapp';
-      button.innerHTML = `<i class="fa-solid ${iconClass}"></i> ${content.contactButtons[index]}`;
+      if (content.contactButtons[index]) {
+
+  if (index === 0) {
+    button.innerHTML = `<i class="fa-solid fa-phone"></i> ${content.contactButtons[index]}`;
+  } else {
+    button.innerHTML = `<i class="fa-brands fa-whatsapp"></i> ${content.contactButtons[index]}`;
+  }
+
+}
+      const contactLinks = document.querySelectorAll("#contact .contact-actions .btn");
+
+if (contactLinks[0]) {
+  contactLinks[0].href = "tel:+966000000000";
+}
+
+if (contactLinks[1]) {
+  contactLinks[1].href = "https://wa.me/966507000227";
+}
     }
   });
 
@@ -180,8 +205,52 @@ document.querySelectorAll('.nav-link').forEach((link) => {
 
 AOS.init({ duration: 900, once: true, offset: 90, easing: 'ease-out-cubic' });
 let carSwiper= null;
+let testimonialSwiper= null;
 applyLanguage('ar');
+function initTestimonialSwiper() {
 
+  if (testimonialSwiper) {
+    testimonialSwiper.destroy(true, true);
+  }
+
+  const testimonialElement = document.querySelector('.testimonialSwiper');
+  if (!testimonialElement) return;
+
+  try {
+
+    testimonialSwiper = new Swiper(testimonialElement, {
+
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: false,
+      speed: 800,
+
+      autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      },
+
+      pagination: {
+        el: ".testimonialSwiper .swiper-pagination",
+        clickable: true,
+      },
+
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+      },
+
+    });
+
+  } catch (error) {
+    console.error(error);
+  }
+}
 
 function initFleetSwiper() {
   if (carSwiper) {
@@ -192,19 +261,32 @@ function initFleetSwiper() {
   if (!fleetSwiper) return;
 
   try {
-    carSwiper = new Swiper(fleetSwiper, {
-      slidesPerView: 1,
-      spaceBetween: 24,
-      loop: true,
-      rtl: document.documentElement.dir === 'rtl',
-      autoplay: { delay: 3500, disableOnInteraction: false },
-      pagination: { el: '.swiper-pagination', clickable: true },
-      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-      observer: true,
-      observeParents: true,
-      watchOverflow: true,
-      breakpoints: { 640: { slidesPerView: 2 }, 992: { slidesPerView: 3 } }
-    });
+ carSwiper = new Swiper(fleetSwiper, {
+  slidesPerView: 1.2,
+  spaceBetween: 30,
+  loop: true,
+  centeredSlides: true,
+  speed: 500,
+  autoplay: {
+    delay: 800,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true
+  },
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: false,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+});
     fleetSwiper.classList.remove('is-fallback');
   } catch (error) {
     fleetSwiper.classList.add('is-fallback');
@@ -212,15 +294,8 @@ function initFleetSwiper() {
 }
 
 initFleetSwiper();
+initTestimonialSwiper();
 
-new Swiper('.testimonialSwiper', {
-  slidesPerView: 1,
-  spaceBetween: 24,
-  loop: true,
-  autoplay: { delay: 4000, disableOnInteraction: false },
-  pagination: { el: '.swiper-pagination', clickable: true },
-  breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
-});
 
 const counters = document.querySelectorAll('.counter');
 const counterObserver = new IntersectionObserver((entries, observer) => {
