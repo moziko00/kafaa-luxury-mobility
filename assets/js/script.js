@@ -97,7 +97,7 @@ function applyLanguage(lang) {
 
   setText("#why-us .eyebrow", content.whyEyebrow);
   setText("#why-us h2", content.whyTitle);
-  setText("#why-us .section-heading p", content.whyText);
+  setText("#why-us .section-description", content.whyText);
   setListText(
     "#why-us .info-card h4",
     content.whyCards.map((card) => card.title),
